@@ -61,10 +61,10 @@ export default function Page() {
 
       <div className="h-16 md:h-24 bg-black" />
 
-      <section className="py0 px-8 md:px-20 bg-black text-white">
-        <div className="max-w-8xl grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
+      <section className="py-0 px-8 md:px-20 bg-black text-white">
+        <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
           <div>
-            <h2 className="text-6xl font-light mb20">NAIN STUDIO</h2>
+            <h2 className="text-6xl font-light mb-20">NAIN STUDIO</h2>
             <p className="text-lg leading-relaxed max-w-2xl">
               We are a creative visualization studio specializing in architectural imagery,
               animation, and realtime experiences.
