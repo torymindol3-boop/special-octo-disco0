@@ -26,13 +26,15 @@ export default function Page() {
       </header>
 
       <motion.img
-        src="/logo.png"
-        alt="Company Logo"
-        initial={{ opacity: 0, scale: 0.95 }}
-        animate={{ opacity: 0.4, scale: 1 }}
-        transition={{ duration: 0.8 }}
-        className="fixed z-30 left-1/2 -translate-x-1/2 top-28 md:top-32 w-40 md:w-64"
-      />
+  src="/logo.png"
+  alt="Company Logo"
+  initial={{ opacity: 0, scale: 0.95 }}
+  animate={{ opacity: 0.4, scale: 1 }}
+  transition={{ duration: 0.8 }}
+  className="fixed z-30 left-1/2 -translate-x-1/2
+             top-[10vh] md:top-[12vh]
+             w-[28vw] max-w-[12rem] md:max-w-[16rem]"
+/>
 
       <section className="relative min-h-screen flex justify-center items-center text-center">
         <video autoPlay loop muted playsInline className="absolute inset-0 w-full h-full object-cover">
