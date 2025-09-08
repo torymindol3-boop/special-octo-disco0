@@ -55,27 +55,27 @@ export default function Page() {
 
       <div className="h-16 md:h-24 bg-black" />
 
-      <section className="py-0 px-8 md:px-20 bg-black text-white">
-        <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
-          <div>
-            <h2 className="text-6xl font-light mb-20">NAIN STUDIO</h2>
-            <p className="text-lg leading-relaxed max-w-2xl">
-              We are a creative visualization studio specializing in architectural imagery,
-              animation, and realtime experiences.
-            </p>
-          </div>
-          <div className="flex md:justify-end gap-6 mt-8 md:mt-0">
-            <a href="https://instagram.com" target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 hover:opacity-80">
-              <Instagram className="w-6 h-6" />
-              <span className="hidden sm:inline">Instagram</span>
-            </a>
-            <a href="https://youtube.com" target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 hover:opacity-80">
-              <Youtube className="w-6 h-6" />
-              <span className="hidden sm:inline">YouTube</span>
-            </a>
-          </div>
-        </div>
-      </section>
+      <section className="py-0 bg-black text-white">
+  <div className="w-full px-6 md:px-6 flex flex-col md:flex-row items-start justify-between gap-8">
+    <div className="max-w-2xl">
+      <h2 className="text-6xl font-light mb-20">NAIN STUDIO</h2>
+      <p className="text-lg leading-relaxed">
+        We are a creative visualization studio specializing in architectural imagery,
+        animation, and realtime experiences.
+      </p>
+    </div>
+    <div className="flex gap-6 w-full md:w-auto justify-end mt-8 md:mt-0">
+      <a href="https://instagram.com" target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 hover:opacity-80">
+        <Instagram className="w-6 h-6" />
+        <span className="hidden sm:inline">Instagram</span>
+      </a>
+      <a href="https://youtube.com" target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 hover:opacity-80">
+        <Youtube className="w-6 h-6" />
+        <span className="hidden sm:inline">YouTube</span>
+      </a>
+    </div>
+  </div>
+</section>
     </div>
   )
 }
