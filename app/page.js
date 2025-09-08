@@ -23,8 +23,8 @@ export default function Page() {
         initial={{ opacity: 0, scale: 0.95 }}
         animate={{ opacity: 0.4, scale: 1 }}
         transition={{ duration: 0.8 }}
-        className="fixed z-30 left-1/2 -translate-x-1/2 pointer-events-none"
-        style={{ top: "calc(env(safe-area-inset-top,0px) + 10svh)", width: "clamp(10rem, 28vw, 16rem)" }}
+        className="fixed z-30 left-1/2 pointer-events-none"
+        style={{ top: "10svh", x: "-50%", width: "clamp(10rem, 28vw, 16rem)" }}
       />
 
       <section className="relative min-h-[100svh] flex justify-center items-center text-center">
