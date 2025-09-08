@@ -17,15 +17,16 @@ export default function Page() {
       <a href="/contact" className="fixed top-4 left-6 z-40 hover:text-gray-400">Contact</a>
       <a href="/work" className="fixed top-4 right-6 z-40 hover:text-gray-400">Work</a>
 
-      <motion.img
-        src="/logo.png"
-        alt="Company Logo"
-        initial={{ opacity: 0, scale: 0.95 }}
-        animate={{ opacity: 0.4, scale: 1 }}
-        transition={{ duration: 0.8 }}
-        className="fixed z-30 left-1/2 pointer-events-none"
-        style={{ top: "10svh", x: "-50%", width: "clamp(10rem, 28vw, 16rem)" }}
-      />
+     <div className="fixed top-[10svh] left-0 right-0 z-30 flex justify-center pointer-events-none">
+  <motion.img
+    src="/logo.png"
+    alt="Company Logo"
+    initial={{ opacity: 0, scale: 0.95 }}
+    animate={{ opacity: 0.4, scale: 1 }}
+    transition={{ duration: 0.8 }}
+    className="w-[28vw] max-w-[16rem] min-w-[10rem]"
+  />
+</div>
 
       <section className="relative min-h-[100svh] flex justify-center items-center text-center">
         <video autoPlay loop muted playsInline className="absolute inset-0 w-full h-full object-cover">
