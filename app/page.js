@@ -55,11 +55,11 @@ export default function Page() {
 
       <div className="h-16 md:h-24 bg-black" />
 
-      <section className="py-0 bg-black text-white">
+     <section className="py-0 bg-black text-white">
   <div className="w-full px-6 md:px-6 flex flex-col md:flex-row items-start justify-between gap-8">
     <div className="max-w-2xl">
-      <h2 className="text-6xl font-light mb-20">NAIN STUDIO</h2>
-      <p className="text-lg leading-relaxed">
+      <h2 className="text-6xl font-light mb-6">NAIN STUDIO</h2>
+      <p className="text-lg leading-relaxed mb-4">
         We are a creative visualization studio specializing in architectural imagery,
         animation, and realtime experiences.
       </p>
