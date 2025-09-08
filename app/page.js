@@ -13,30 +13,21 @@ export default function Page() {
   }, [])
 
   return (
-    <div className="relative min-h-screen bg-black text-white overflow-x-hidden">
-      <header
-        className={`fixed top-0 left-0 w-full z-20 transition-colors duration-500 ${
-          scrolled ? "bg-black/0 backdrop-blur-md" : "bg-transparent"
-        }`}
-      >
-        <div className="px-6 py-4 flex items-center justify-between">
-          <a href="/contact" className="hover:text-gray-400">Contact</a>
-          <a href="/work" className="hover:text-gray-400">Work</a>
-        </div>
-      </header>
+    <div className="relative min-h-[100svh] bg-black text-white overflow-x-hidden">
+      <a href="/contact" className="fixed top-4 left-6 z-40 hover:text-gray-400">Contact</a>
+      <a href="/work" className="fixed top-4 right-6 z-40 hover:text-gray-400">Work</a>
 
       <motion.img
-  src="/logo.png"
-  alt="Company Logo"
-  initial={{ opacity: 0, scale: 0.95 }}
-  animate={{ opacity: 0.4, scale: 1 }}
-  transition={{ duration: 0.8 }}
-  className="fixed z-30 left-1/2 -translate-x-1/2
-             top-[10vh] md:top-[12vh]
-             w-[28vw] max-w-[12rem] md:max-w-[16rem]"
-/>
+        src="/logo.png"
+        alt="Company Logo"
+        initial={{ opacity: 0, scale: 0.95 }}
+        animate={{ opacity: 0.4, scale: 1 }}
+        transition={{ duration: 0.8 }}
+        className="fixed z-30 left-1/2 -translate-x-1/2 pointer-events-none"
+        style={{ top: "calc(env(safe-area-inset-top,0px) + 10svh)", width: "clamp(10rem, 28vw, 16rem)" }}
+      />
 
-      <section className="relative min-h-screen flex justify-center items-center text-center">
+      <section className="relative min-h-[100svh] flex justify-center items-center text-center">
         <video autoPlay loop muted playsInline className="absolute inset-0 w-full h-full object-cover">
           <source src="/background.mp4" type="video/mp4" />
         </video>
@@ -45,7 +36,7 @@ export default function Page() {
 
       <div className="h-16 md:h-24 bg-black" />
 
-      <section className="relative min-h-screen flex justify-center items-center text-center">
+      <section className="relative min-h-[100svh] flex justify-center items-center text-center">
         <video autoPlay loop muted playsInline className="absolute inset-0 w-full h-full object-cover">
           <source src="/background-2.mp4" type="video/mp4" />
         </video>
@@ -54,7 +45,7 @@ export default function Page() {
 
       <div className="h-16 md:h-24 bg-black" />
 
-      <section className="relative min-h-screen flex justify-center items-center text-center">
+      <section className="relative min-h-[100svh] flex justify-center items-center text-center">
         <video autoPlay loop muted playsInline className="absolute inset-0 w-full h-full object-cover">
           <source src="/background-3.mp4" type="video/mp4" />
         </video>
